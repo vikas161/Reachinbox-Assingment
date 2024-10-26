@@ -17,7 +17,7 @@ const fetchUnreadEmails = async () => {
     console.log(`Found ${messages.length} unread messages.`);
 
     for (const message of messages) {
-      // await addEmailJob({provider: "gmail", messageId: message.id})
+       await addEmailJob({provider: "gmail", messageId: message.id})
     //   const messageContent = await openMessage(message.id);
     //   console.log(`Message ID: ${message.id}`);
     //   console.log(`Subject: ${messageContent.subject}`);
